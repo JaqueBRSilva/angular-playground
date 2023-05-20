@@ -4,11 +4,11 @@ class MeuComponent extends HTMLElement {
 
     const shadow = this.attachShadow({ mode: "open" });
 
-    //base do component
+    // BASE DO COMPONENTE
     const componentRoot = document.createElement("h1");
     componentRoot.textContent = "Felipe";
 
-    //estilo do component
+    // ESTILO DO COMPONENTE
     const style = document.createElement("style");
     style.textContent = `
       h1{
@@ -16,7 +16,7 @@ class MeuComponent extends HTMLElement {
       }
     `;
 
-    //envia para shadow
+    // ENVIA PARA SHADOW
     shadow.appendChild(componentRoot);
     shadow.appendChild(style);
   }

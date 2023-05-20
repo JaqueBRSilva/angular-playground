@@ -12,7 +12,7 @@ class Cardnews extends HTMLElement {
     componentRoot.setAttribute("class", "card");
 
     const cardLeft = document.createElement("div");
-    cardLeft.setAttribute("class", "card__left");
+    cardLeft.setAttribute("class", "card_left");
 
     const autor = document.createElement("span");
     autor.textContent = "By " + (this.getAttribute("autor") || "Anonymous");
@@ -22,14 +22,14 @@ class Cardnews extends HTMLElement {
     linkTitle.href = this.getAttribute("link-url");
 
     const newsContent = document.createElement("p");
-    newsContent.textContent = this.getAttribute("contet");
+    newsContent.textContent = this.getAttribute("content");
 
     cardLeft.appendChild(autor);
     cardLeft.appendChild(linkTitle);
     cardLeft.appendChild(newsContent);
 
     const cardRight = document.createElement("div");
-    cardRight.setAttribute("class", "card__right");
+    cardRight.setAttribute("class", "card_right");
 
     const newsImage = document.createElement("img");
     newsImage.src = this.getAttribute("photo") || "assets/foto-default.jpg";
@@ -55,18 +55,18 @@ class Cardnews extends HTMLElement {
           justify-content: space-between;
         }
         
-        .card__left {
+        .card_left {
           display: flex;
           flex-direction: column;
           justify-content: center;
           padding-left: 10px;
         }
         
-        .card__left > span {
+        .card_left > span {
           font-weight: 400;
         }
         
-        .card__left > a {
+        .card_left > a {
           margin-top: 15px;
           font-size: 25px;
           color: black;
@@ -74,7 +74,7 @@ class Cardnews extends HTMLElement {
           font-weight: bold;
         }
         
-        .card__left > p {
+        .card_left > p {
           color: rgb(70, 70, 70);
         }
     `;
