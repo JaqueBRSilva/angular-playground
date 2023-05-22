@@ -1,4 +1,5 @@
-//generics
+// GENERICS
+
 function concatArray<T>(...itens: T[]): T[] {
   return new Array().concat(...itens);
 }

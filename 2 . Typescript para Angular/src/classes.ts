@@ -1,39 +1,41 @@
-//classes
+// CLASSES
 
-/*
-  data modifiers
-  public
-  private
-  protected
-*/
+/** DATA MODIFIERS
+ * 
+ * public
+ * private
+ * protected
+ */
 
 class Character {
   protected name?: string;
-  readonly stregth: number;
+  readonly strength: number;
   skill: number;
 
-  constructor(name: string, stregth: number, skill: number) {
+  constructor(name: string, strength: number, skill: number) {
     this.name = name;
-    this.stregth = stregth;
+    this.strength = strength;
     this.skill = skill;
   }
 
   attack(): void {
-    console.log(`Attack with ${this.stregth} points`);
+    console.log(`Attack with ${this.strength} points`);
   }
 }
 
-//Character: superclass
-//Magician: subclass
+// Character: SUPERCLASS
+// Magician: SUBCLASS
+
 class Magician extends Character {
   magicPoints: number;
+  
   constructor(
     name: string,
-    stregth: number,
+    strength: number,
     skill: number,
     magicPoints: number
   ) {
-    super(name, stregth, skill);
+    super(name, strength, skill);
     this.magicPoints = magicPoints;
   }
 }

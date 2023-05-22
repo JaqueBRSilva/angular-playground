@@ -1,12 +1,13 @@
-//decorators
-//class decorator
+// DECORATORS
+
+// CLASS DECORATOR
 function apiVersion(version: string) {
   return (target: any) => {
     Object.assign(target.prototype, { __version: version, __name: "felipe" });
   };
 }
 
-//attribute decorator
+// ATTRIBUTE DECORATOR
 function minLength(length: number) {
   return (target: any, key: string) => {
     let _value = target[key];

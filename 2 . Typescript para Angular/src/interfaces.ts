@@ -1,4 +1,5 @@
-//interfaces (type x interface)
+// INTERFACES (type X interface)
+
 type robot = {
   readonly id: number | string;
   name: string;

@@ -1,17 +1,17 @@
 "use strict";
 class Character {
-    constructor(name, stregth, skill) {
+    constructor(name, strength, skill) {
         this.name = name;
-        this.stregth = stregth;
+        this.strength = strength;
         this.skill = skill;
     }
     attack() {
-        console.log(`Attack with ${this.stregth} points`);
+        console.log(`Attack with ${this.strength} points`);
     }
 }
 class Magician extends Character {
-    constructor(name, stregth, skill, magicPoints) {
-        super(name, stregth, skill);
+    constructor(name, strength, skill, magicPoints) {
+        super(name, strength, skill);
         this.magicPoints = magicPoints;
     }
 }
