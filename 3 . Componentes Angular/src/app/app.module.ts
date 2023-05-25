@@ -19,4 +19,5 @@ import { EntryDataComponent } from './components/entry-data.component';
   ],
   bootstrap: [AppComponent],
 })
+
 export class AppModule {}
