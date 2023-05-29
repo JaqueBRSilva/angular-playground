@@ -9,7 +9,6 @@ import { PortifolioModule } from './pages/portifolio/portifolio.module';
 import { MenuComponent } from './shared/menu/menu.component';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,

@@ -8,17 +8,17 @@ import { PokemonData } from '../../models/pokemonData'
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
-  pokemon:PokemonData
+  pokemon: PokemonData
 
   constructor(
-    private service:PokemonService
+    private service: PokemonService
   ) {
 
     this.pokemon = {
-      id:0, name:'',
-      sprites:{
+      id: 0, name: '',
+      sprites: {
         front_default: ''
-      },types:[]
+      }, types: []
     }
 
   }
@@ -29,7 +29,7 @@ export class CardComponent implements OnInit {
   }
 
 
-  getPokemon(searchName:string){
+  getPokemon(searchName: string) {
     this.service.getPokemon(searchName).subscribe(
       {
         next: (res) => {

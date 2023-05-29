@@ -1,5 +1,5 @@
-.card{
-  border:1px solid black;
+.card {
+  border: 1px solid black;
   width: 250px;
   height: 350px;
 
@@ -9,16 +9,16 @@
   border-radius: 10px;
 }
 
-.card__title{
+.card__title {
   margin-left: auto;
   margin-right: auto;
 }
 
-.card__title > h3{
+.card__title > h3 {
   color: white;
 }
 
-.card__body{
+.card__body {
   background-color: #616161;
   width: 90%;
   margin-left: auto;
@@ -26,25 +26,25 @@
   height: 70%;
 }
 
-.card__stats{
+.card__stats {
   padding-top: 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.card__stats__type{
+.card__stats__type {
   color: rgb(0, 0, 0);
   font-weight: bold;
 
-  background-color: coral ;
+  background-color: coral;
   border-radius: 5px;
 
   padding: 5px;
   margin-right: 4px;
 }
 
-.card__body{
+.card__body {
   display: flex;
   align-items: center;
   justify-content: center;

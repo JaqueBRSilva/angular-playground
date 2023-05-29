@@ -10,8 +10,8 @@ export class CardComponent implements OnInit {
 
   constructor(
     private parametrizador: ActivatedRoute,
-    private navegador:Router
-    ) {
+    private navegador: Router
+  ) {
 
     //http://localhost:4200/portfolio/{1}
     this.parametrizador.params.subscribe(
@@ -27,13 +27,13 @@ export class CardComponent implements OnInit {
       res => console.log(res)
     )
 
-   }
+  }
 
   ngOnInit(): void {
 
-  //  setInterval(()=>{
-  //    this.navegador.navigate(['/'])
- //   }, 5000)
+    //  setInterval(()=>{
+    //    this.navegador.navigate(['/'])
+    //   }, 5000)
   }
 
 }

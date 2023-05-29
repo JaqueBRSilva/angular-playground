@@ -7,7 +7,7 @@ import { TitleComponent } from './title/title.component';
   declarations: [
     TitleComponent
   ],
-  exports:[
+  exports: [
     TitleComponent
   ],
   imports: [

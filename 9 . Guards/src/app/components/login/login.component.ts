@@ -15,11 +15,11 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  logar(){
+  logar() {
     this.service.doLogin()
   }
 
-  deslogar(){
+  deslogar() {
     this.service.doLogout()
   }
 

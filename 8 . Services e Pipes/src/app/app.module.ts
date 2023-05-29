@@ -10,7 +10,6 @@ import { FormsModule } from '@angular/forms';
 import { TransformadorPipe } from './pipes/transformador.pipe';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,

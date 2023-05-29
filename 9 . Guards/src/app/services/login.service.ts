@@ -7,11 +7,11 @@ export class LoginService {
 
   constructor() { }
 
-  doLogin(){
+  doLogin() {
     localStorage.setItem('token', 'fdsfkl12312')
   }
 
-  doLogout(){
+  doLogout() {
     localStorage.clear()
   }
 
